@@ -117,7 +117,7 @@ protected List<ReactPackage> getPackages() {
 
 #### 3.1 Android
 
-Before you can run the project, follow the [Getting Started Guide](https://developers.facebook.com/docs/android/getting-started/) for Facebook Android SDK to set up a Facebook app. You can skip the build.gradle changes since that's taken care of by the rnpm link step above, but **make sure** you follow the rest of the steps such as updating `strings.xml` and `AndroidManifest.xml`. In addition, keep in mind that you have to point the Key Hash generation command at your app's `debug.keystore` file. You can find its location by checking [`storeFile`](https://developer.android.com/studio/build/gradle-tips#sign-your-app) in one of the `build.gradle` files (its default path is `android/app/build.gradle` however this can vary from project to project).
+Before you can run the project, follow the [Getting Started Guide](https://developers.facebook.com/docs/android/getting-started/) for Facebook Android SDK to set up a Facebook app. You can skip the build.gradle changes since that's taken care of by the rnpm link step above, but **make sure** you follow the rest of the steps such as updating `strings.xml` and `AndroidManifest.xml`.
 
 #### 3.2 iOS
 
@@ -125,7 +125,7 @@ Follow ***steps 2, 3 and 4*** in the [Getting Started Guide](https://developers.
 
 **NOTE:** The above link (Step 3 and 4) contains Swift code instead of Objective-C which is inconvenient since `react-native` ecosystem still relies
    on Objective-C. To make it work in Objective-C you need to do the following in `/ios/PROJECT/AppDelegate.m`:
-   1. Add `#import <FBSDKCoreKit/FBSDKCoreKit-swift.h>`
+   1. Add `#import <FBSDKCoreKit/FBSDKCoreKit.h>`
    2. Inside `didFinishLaunchingWithOptions`, add the following:
       ```objc
          [[FBSDKApplicationDelegate sharedInstance] application:application
@@ -153,7 +153,7 @@ Follow ***steps 2, 3 and 4*** in the [Getting Started Guide](https://developers.
 The `AppDelegate.m` file can only have one method for `openUrl`. If you're also using `RCTLinkingManager` to handle deep links, you should handle both results in your `openUrl` method.
 
 ```objc
-#import <FBSDKCoreKit/FBSDKCoreKit-swift.h> // <- Add This Import
+#import <FBSDKCoreKit/FBSDKCoreKit.h> // <- Add This Import
 #import <React/RCTLinkingManager.h> // <- Add This Import
 
 - (BOOL)application:(UIApplication *)app

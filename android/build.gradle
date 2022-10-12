@@ -20,16 +20,6 @@ buildscript {
 apply plugin: 'com.android.library'
 
 android {
-    configurations.all {
-        c -> c.resolutionStrategy.eachDependency {
-            DependencyResolveDetails dependency ->
-                println dependency.requested.group
-                if (dependency.requested.group == 'org.bouncycastle') {
-                    dependency.useTarget 'org.bouncycastle:bcprov-jdk15to18:1.68'
-                }
-        }
-    }
-
     compileSdkVersion safeExtGet('compileSdkVersion', 33)
     defaultConfig {
         minSdkVersion safeExtGet('minSdkVersion', 16)
