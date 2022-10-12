@@ -1,6 +1,6 @@
 {
   "name": "react-native-fbsdk-next",
-  "version": "11.0.0",
+  "version": "11.0.1",
   "description": "Facebook SDK support for React Native apps.",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
@@ -34,9 +34,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/thebergamo/react-native-fbsdk-next.git"
+    "url": "https://github.com/ouchfree/fbsdk-next.git"
   },
-  "homepage": "https://github.com/thebergamo/react-native-fbsdk-next/",
+  "homepage": "https://github.com/ouchfree/fbsdk-next.git",
   "keywords": [
     "react",
     "react-native",
