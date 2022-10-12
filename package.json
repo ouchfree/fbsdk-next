@@ -10,11 +10,6 @@
       "typescript"
     ]
   },
-  "_from": "react-native-fbsdk-next",
-  "_id": "react-native-fbsdk-next@11.0.0",
-  "_inBundle": false,
-  "_integrity": "sha512-F0rNqfSByO7MG0n2J8rDdqBsqu2P5+nFkEnBuOh+HN1UDnxpF6lbt4N38oWN1v32h+Gb0TL0wiJnperbGuu5tQ==",
-  "_location": "/react-native-fbsdk-next",
   "_phantomChildren": {
     "@expo/json-file": "8.2.36",
     "@expo/plist": "0.0.18",
@@ -140,7 +135,6 @@
     "expo-module.config.json",
     "plugin/build/"
   ],
-  "homepage": "https://github.com/thebergamo/react-native-fbsdk-next/",
   "keywords": [
     "react",
     "react-native",
@@ -173,10 +167,6 @@
       "module",
       "typescript"
     ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/thebergamo/react-native-fbsdk-next.git"
   },
   "scripts": {
     "build:plugin": "tsc --build plugin",
